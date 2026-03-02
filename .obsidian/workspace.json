@@ -8,21 +8,27 @@
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "88db308868261b47",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_MATERIE/Fondamenti di Informatica/MOC_Fondamenti di Informatica.md",
+                "file": "01_MATERIE/Fondamenti di Informatica/Lezione 2026-03-02 - Alfabeto, Stringa, Linguaggio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MOC_Fondamenti di Informatica"
+              "title": "Lezione 2026-03-02 - Alfabeto, Stringa, Linguaggio"
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "1c879a05351439bd",
+        "type": "tabs",
+        "children": [
           {
-            "id": "6c2a97f9377e8fae",
+            "id": "33af4f3ec0a3d2ec",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -34,37 +40,8 @@
               "icon": "lucide-file",
               "title": "LaTeX Cheat Sheet"
             }
-          },
-          {
-            "id": "726fea386e2cc841",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01_MATERIE/Fondamenti di Informatica/MOC_Fondamenti di Informatica.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "MOC_Fondamenti di Informatica"
-            }
-          },
-          {
-            "id": "33af4f3ec0a3d2ec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01_MATERIE/Fondamenti di Informatica/Untitled.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Untitled"
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -243,7 +220,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 372.5
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -263,17 +241,17 @@
       "custom-sort:Toggle custom sorting": false
     }
   },
-  "active": "33af4f3ec0a3d2ec",
+  "active": "88db308868261b47",
   "lastOpenFiles": [
-    "01_MATERIE/Fondamenti di Informatica/Untitled 1.md",
-    "01_MATERIE/Fondamenti di Informatica/MOC_Fondamenti di Informatica.md",
+    "02_RISORSE/LaTeX Cheat Sheet.md",
+    "01_MATERIE/Fondamenti di Informatica/Lezione 2026-03-02 - Alfabeto, Stringa, Linguaggio.md",
     "01_MATERIE/Fondamenti di Informatica/Untitled.md",
+    "01_MATERIE/Fondamenti di Informatica/MOC_Fondamenti di Informatica.md",
     "01_MATERIE/Fondamenti di Informatica/Lezione 2026-03-02.md",
     "README.md",
     "02_RISORSE/Untitled.md",
     "00_SISTEMA/Pasted image 20260302141404.png",
     "01_MATERIE/Fondamenti di Informatica/Lezione 2026-03-02 - Calcoli.md",
-    "02_RISORSE/LaTeX Cheat Sheet.md",
     "Home.md",
     "01_MATERIE/Elementi di Analisi 1/MOC_Elementi di Analisi 1.md",
     "_templates/Nota Concetto.md",

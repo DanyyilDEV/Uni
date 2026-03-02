@@ -18,14 +18,14 @@
 | **Parentesi Adattive** | `\left( \frac{a}{b} \right)` | $\left( \frac{a}{b} \right)$ |
 
 ## 2. Analisi Matematica (Analisi 1)
-| Concetto | Comando LaTeX | Risultato |
-| :--- | :--- | :--- |
-| **Limite** | `\lim_{x \to \infty}` | $\lim_{x \to \infty}$ |
-| **Sommatoria** | `\sum_{i=0}^{n}` | $\sum_{i=0}^{n}$ |
-| **Integrale** | `\int_{a}^{b} f(x) \, dx` | $\int_{a}^{b} f(x) \, dx$ |
-| **Derivata** | `\frac{df}{dx}` | $\frac{df}{dx}$ |
+| Concetto              | Comando LaTeX                   | Risultato                       |
+| :-------------------- | :------------------------------ | :------------------------------ |
+| **Limite**            | `\lim_{x \to \infty}`           | $\lim_{x \to \infty}$           |
+| **Sommatoria**        | `\sum_{i=0}^{n}`                | $\sum_{i=0}^{n}$                |
+| **Integrale**         | `\int_{a}^{b} f(x) \, dx`       | $\int_{a}^{b} f(x) \, dx$       |
+| **Derivata**          | `\frac{df}{dx}`                 | $\frac{df}{dx}$                 |
 | **Derivata Parziale** | `\frac{\partial f}{\partial x}` | $\frac{\partial f}{\partial x}$ |
-| **Infinito** | `\infty` | $\infty$ |
+| **Infinito**          | `\infty`                        | $\infty$                        |
 
 ## 3. Logica e Insiemistica (Informatica)
 | Concetto | Comando LaTeX | Risultato |
