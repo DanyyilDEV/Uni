@@ -1,5 +1,16 @@
 {
   "simple-colored-folder@@bg-templaterscripts@@light": "#808080",
   "simple-colored-folder@@bg-templaterscripts@@dark": "#808080",
-  "simple-colored-folder@@col-templaterscripts@@light": "#FFFFFF"
+  "simple-colored-folder@@col-templaterscripts@@light": "#FFFFFF",
+  "simple-colored-folder@@bg-templates@@light": "#A9A9A9",
+  "simple-colored-folder@@col-templates@@light": "#FFFFFF",
+  "simple-colored-folder@@bg-00sistema@@light": "#FFB000",
+  "simple-colored-folder@@col-00sistema@@light": "#1A1A1A",
+  "simple-colored-folder@@bg-01materie@@light": "#007BFF",
+  "simple-colored-folder@@col-01materie@@light": "#FFFFFF",
+  "simple-colored-folder@@bg-02risorse@@light": "#7D3CFF",
+  "simple-colored-folder@@col-02risorse@@light": "#FFFFFF",
+  "simple-colored-folder@@bg-03archivio@@light": "#2D3436",
+  "simple-colored-folder@@col-03archivio@@light": "#B2BEC3",
+  "simple-colored-folder@@spf-saturate-hover": 150
 }
