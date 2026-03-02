@@ -32,6 +32,8 @@ tipo: dashboard
 >> SORT file.mday DESC
 >> LIMIT 5
 >> ```
+>
+>>[!NOTE] [[Orario]]
 
 ---
 

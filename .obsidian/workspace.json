@@ -6,7 +6,7 @@
       {
         "id": "1c879a05351439bd",
         "type": "tabs",
-        "dimension": 64.46886446886447,
+        "dimension": 78.88067581837382,
         "children": [
           {
             "id": "0e14f225d4a3a9c3",
@@ -14,12 +14,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_MATERIE/Fondamenti di Informatica/MOC_Fondamenti di Informatica.md",
-                "mode": "source",
+                "file": "Orario.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "MOC_Fondamenti di Informatica"
+              "title": "Orario"
             }
           },
           {
@@ -41,7 +41,7 @@
       {
         "id": "dd519fefa695b4ae",
         "type": "tabs",
-        "dimension": 35.53113553113553,
+        "dimension": 21.11932418162619,
         "children": [
           {
             "id": "2579144e2c44d17f",
@@ -258,19 +258,20 @@
   },
   "active": "0e14f225d4a3a9c3",
   "lastOpenFiles": [
+    "Home.md",
+    "Orario.md",
+    "00_SISTEMA/Pasted image 20260302234354.png",
+    "01_MATERIE/Fondamenti di Informatica/Esercizi_Alfabeto.md",
+    "01_MATERIE/Fondamenti di Informatica/MOC_Fondamenti di Informatica.md",
     "01_MATERIE/Elementi di Analisi 1/MOC_Elementi di Analisi 1.md",
     "01_MATERIE/Programmazione 2/MOC_Programmazione 2.md",
-    "01_MATERIE/Fondamenti di Informatica/MOC_Fondamenti di Informatica.md",
     "01_MATERIE/Fondamenti di Informatica/Concetti/Stringa.md",
     "01_MATERIE/Fondamenti di Informatica/Concetti/Linguaggio.md",
     "01_MATERIE/Fondamenti di Informatica/Concetti/Alfabeto.md",
     "01_MATERIE/Fondamenti di Informatica/Lezione 2026-03-02 - Alfabeto, Stringa, Linguaggio.md",
-    "01_MATERIE/Fondamenti di Informatica/Esercizi_Alfabeto.md",
-    "Untitled.md",
     "01_MATERIE/Fondamenti di Informatica/Untitled.md",
     "01_MATERIE/Fondamenti di Informatica/Concetti",
     "02_RISORSE/LaTeX Cheat Sheet.md",
-    "Home.md",
     "01_MATERIE/Fondamenti di Informatica/File_Condivisi/Untitled.md",
     "01_MATERIE/Fondamenti di Informatica/File_Condivisi/1Alfabeto-Stringa-Linguaggio.pdf",
     "00_SISTEMA/Pasted image 20260302172632.png",
@@ -289,7 +290,6 @@
     "01_MATERIE/Elementi di Analisi 1/Acqua.md",
     "01_MATERIE/Elementi di Analisi 1/Lezione 2026-03-02 - Acqua.md",
     "01_MATERIE/Elementi di Analisi 1/Calcolo.md",
-    "_templates/Mappa Materia.md",
     "01_MATERIE/Test",
     "01_MATERIE/Anno 1",
     "_templates",

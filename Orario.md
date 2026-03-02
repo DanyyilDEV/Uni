@@ -1,0 +1,26 @@
+# Orario Universitario
+
+_Corso di Laurea in Informatica e Matematica • Università di Catania_
+
+---
+
+|ORA|LUNEDÌ|MARTEDÌ|MERCOLEDÌ|GIOVEDÌ|VENERDÌ|
+|:-:|:--|:--|:--|:--|:--|
+|**11:00**||<div style="background: #86efac; color: #064e3b; padding: 12px; border-radius: 8px; text-align: center;"><strong>Inglese</strong><br>👤 Prof. Alessi<br>📍 Aula 23</div>|<div style="background: #86efac; color: #064e3b; padding: 12px; border-radius: 8px; text-align: center;"><strong>Inglese</strong><br>👤 Prof. Alessi<br>📍 Aula 3</div>|||
+|**12:00**||<div style="background: #86efac; color: #064e3b; padding: 12px; border-radius: 8px; text-align: center;"><strong>Inglese</strong><br>👤 Prof. Alessi<br>📍 Aula 23</div>|<div style="background: #86efac; color: #064e3b; padding: 12px; border-radius: 8px; text-align: center;"><strong>Inglese</strong><br>👤 Prof. Alessi<br>📍 Aula 3</div>|||
+|**13:00**|**⏸️ PAUSA PRANZO**|||||
+|**14:00**|<div style="background: #fdba74; color: #7c2d12; padding: 12px; border-radius: 8px; text-align: center;"><strong>Fondamenti di Informatica</strong><br>👤 Prof. Fargetta</div>|<div style="background: #fda4af; color: #881337; padding: 12px; border-radius: 8px; text-align: center;"><strong>Elementi di Analisi</strong><br>👤 Prof. Mosconi</div>|<div style="background: #fdba74; color: #7c2d12; padding: 12px; border-radius: 8px; text-align: center;"><strong>Fondamenti di Informatica</strong><br>👤 Prof. Fargetta</div>|<div style="background: #fda4af; color: #881337; padding: 12px; border-radius: 8px; text-align: center;"><strong>Elementi di Analisi</strong><br>👤 Prof. Mosconi</div>|<div style="background: #7dd3fc; color: #0c4a6e; padding: 12px; border-radius: 8px; text-align: center;"><strong>Programmazione II</strong><br>👤 Prof. Santamaria</div>|
+|**15:00**|<div style="background: #fdba74; color: #7c2d12; padding: 12px; border-radius: 8px; text-align: center;"><strong>Fondamenti di Informatica</strong><br>👤 Prof. Fargetta</div>|<div style="background: #fda4af; color: #881337; padding: 12px; border-radius: 8px; text-align: center;"><strong>Elementi di Analisi</strong><br>👤 Prof. Mosconi</div>|<div style="background: #fdba74; color: #7c2d12; padding: 12px; border-radius: 8px; text-align: center;"><strong>Fondamenti di Informatica</strong><br>👤 Prof. Fargetta</div>|<div style="background: #fda4af; color: #881337; padding: 12px; border-radius: 8px; text-align: center;"><strong>Elementi di Analisi</strong><br>👤 Prof. Mosconi</div>|<div style="background: #7dd3fc; color: #0c4a6e; padding: 12px; border-radius: 8px; text-align: center;"><strong>Programmazione II</strong><br>👤 Prof. Santamaria</div>|
+|**16:00**|<div style="background: #fdba74; color: #7c2d12; padding: 12px; border-radius: 8px; text-align: center;"><strong>Fondamenti di Informatica</strong><br>👤 Prof. Fargetta</div>|<div style="background: #fda4af; color: #881337; padding: 12px; border-radius: 8px; text-align: center;"><strong>Elementi di Analisi</strong><br>👤 Prof. Mosconi</div>|<div style="background: #fdba74; color: #7c2d12; padding: 12px; border-radius: 8px; text-align: center;"><strong>Fondamenti di Informatica</strong><br>👤 Prof. Fargetta</div>|<div style="background: #7dd3fc; color: #0c4a6e; padding: 12px; border-radius: 8px; text-align: center;"><strong>Programmazione II</strong><br>👤 Prof. Santamaria</div>||
+|**17:00**|||<div style="background: #7dd3fc; color: #0c4a6e; padding: 12px; border-radius: 8px; text-align: center;"><strong>Programmazione II</strong><br>👤 Prof. Santamaria</div>|<div style="background: #7dd3fc; color: #0c4a6e; padding: 12px; border-radius: 8px; text-align: center;"><strong>Programmazione II</strong><br>👤 Prof. Santamaria</div>||
+|**18:00**|||<div style="background: #7dd3fc; color: #0c4a6e; padding: 12px; border-radius: 8px; text-align: center;"><strong>Programmazione II</strong><br>👤 Prof. Santamaria</div>|||
+|**19:00**||||||
+
+---
+
+### 📖 Legenda Corsi
+
+- 🟢 **Inglese** - Prof. Alessi
+- 🟠 **Fondamenti di Informatica** - Prof. Fargetta
+- 🔴 **Elementi di Analisi** - Prof. Mosconi
+- 🔵 **Programmazione II** - Prof. Santamaria
