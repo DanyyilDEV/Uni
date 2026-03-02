@@ -1,8 +1,6 @@
 /*
   getUniversityContext.js
-
-  Reusable Templater user script that infers academic context (subject & year)
-  from the current file's location inside the vault.
+  Infers: 01_MATERIE -> Anno X -> Materia
 */
 
 const path = require("path");
@@ -10,9 +8,8 @@ const path = require("path");
 function requireScript(scriptFile) {
   const vaultBasePath = app?.vault?.adapter?.basePath;
   if (!vaultBasePath) {
-    throw new Error("Unable to resolve vault base path to load user scripts.");
+    throw new Error("Impossibile risolvere il percorso del vault.");
   }
-
   return require(path.join(vaultBasePath, "_templater_scripts", scriptFile));
 }
 
@@ -23,54 +20,30 @@ const universityConfig = getUniversityConfig();
 const configLabels = universityConfig?.labels ?? {};
 const configFs = universityConfig?.fs ?? {};
 
-const GENERAL_LABEL =
-  configLabels.general ??
-  (Array.isArray(universityConfig?.parciales)
-    ? universityConfig.parciales.find((value) => /general/i.test(value))
-    : undefined);
-
-if (!GENERAL_LABEL) {
-  throw new Error("University config must define a general label.");
-}
-
-const UNIVERSITY_ROOT = configFs.universityRoot;
-
-if (!UNIVERSITY_ROOT) {
-  throw new Error("University config must define fs.universityRoot.");
-}
+const GENERAL_LABEL = configLabels.general ?? "General";
+const UNIVERSITY_ROOT = configFs.universityRoot ?? "01_MATERIE";
 
 const { normalizeParcial, normalizeYear } = createUniversityNoteUtils();
 
 function getUniversityContext(targetFile) {
-  if (!targetFile) {
-    return { subject: GENERAL_LABEL, year: null, parcial: GENERAL_LABEL };
-  }
+  if (!targetFile) return { subject: GENERAL_LABEL, year: null, parcial: GENERAL_LABEL };
 
   const parentPath = targetFile.parent?.path ?? "";
-  if (!parentPath) {
-    return { subject: GENERAL_LABEL, year: null, parcial: GENERAL_LABEL };
-  }
-
   const pathParts = parentPath.split("/").filter(Boolean);
-  const universityRootLower = UNIVERSITY_ROOT.toLowerCase();
-  const uniIndex = pathParts.findIndex((part = "") => part.toLowerCase() === universityRootLower);
-
+  
+  // Trova dove inizia 01_MATERIE
+  const uniIndex = pathParts.findIndex(p => p === UNIVERSITY_ROOT);
   const relativeParts = uniIndex === -1 ? pathParts : pathParts.slice(uniIndex + 1);
-  const frontmatterYear = app.metadataCache.getFileCache(targetFile)?.frontmatter?.year;
-  const pathYearCandidate = relativeParts.find((part = "") => normalizeYear(part, { allowLiteral: false }));
-  const year = normalizeYear(frontmatterYear) ?? normalizeYear(pathYearCandidate, { allowLiteral: false });
 
-  const firstSegment = relativeParts[0] ?? "";
-  const firstSegmentIsYear = !!normalizeYear(firstSegment, { allowLiteral: false });
+  // relativeParts[0] dovrebbe essere "Anno 1", relativeParts[1] "Analisi 1"
+  const pathYearCandidate = relativeParts.find(p => normalizeYear(p, { allowLiteral: false }));
+  const year = normalizeYear(app.metadataCache.getFileCache(targetFile)?.frontmatter?.year) ?? pathYearCandidate;
 
-  const subjectCandidate = firstSegmentIsYear ? relativeParts[1] : relativeParts[0];
-  const subject = subjectCandidate || GENERAL_LABEL;
+  // Se il primo segmento è l'anno, la materia è il secondo. Altrimenti è il primo.
+  const firstIsYear = !!normalizeYear(relativeParts[0], { allowLiteral: false });
+  const subject = firstIsYear ? (relativeParts[1] ?? GENERAL_LABEL) : (relativeParts[0] ?? GENERAL_LABEL);
 
-  const searchParts = firstSegmentIsYear ? relativeParts.slice(1) : relativeParts;
-  const parcialCandidate = searchParts.find((part = "") => normalizeParcial(part) !== GENERAL_LABEL);
-  const parcial = normalizeParcial(parcialCandidate);
-
-  return { subject, year, parcial };
+  return { subject, year, parcial: GENERAL_LABEL };
 }
 
 module.exports = getUniversityContext;

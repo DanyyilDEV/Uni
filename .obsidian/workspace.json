@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "4509724f8bf84da7",
+        "id": "25bb86b0736120ba",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a7b303c61786dc",
+            "id": "0f3ce09622e51dbe",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "01_MATERIE/Elementi di Analisi 1/Calcolo.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Calcolo"
             }
           }
         ]
@@ -37,7 +41,7 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
@@ -205,16 +209,35 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e7a7b303c61786dc",
+  "active": "0f3ce09622e51dbe",
   "lastOpenFiles": [
+    "01_MATERIE/Elementi di Analisi 1/MOC_Elementi di Analisi 1.md",
+    "01_MATERIE/Elementi di Analisi 1/Calcolo.md",
+    "Untitled 1.md",
+    "_templates/Nota Concetto.md",
+    "01_MATERIE/MOC_Programmazione 2.md",
+    "01_MATERIE/Fondamenti di Informatica/MOC_Fondamenti di Informatica.md",
+    "_templates/Mappa Materia.md",
+    "01_MATERIE/Programmazione 2/Untitled.md",
+    "01_MATERIE/Elementi di Analisi 1/Lezione 2026-03-02 - aaaaaa.md",
+    "01_MATERIE/Elementi di Analisi 1/Lezione 2026-03-02 - Calcoli 2.md",
+    "01_MATERIE/Elementi di Analisi 1/Lezione 2026-03-02 - Calcoli.md",
+    "_templates/Appunti Lezione.md",
+    "_templates/Nota Generica.md",
+    "01_MATERIE/Elementi di Analisi 1/Nota.md",
+    "01_MATERIE/Lezione 2026-03-02.md",
+    "01_MATERIE/Lezione 2026-03-02 - Calcoli.md",
+    "01_MATERIE/Lezione 2026-03-02 - calcoli.md",
+    "01_MATERIE/Lecture 2026-03-02.md",
+    "_templates/TestTemplate.md",
     "01_MATERIE/Elementi di Analisi 1/Test1.md",
-    "_templates/Lecture Note.md",
-    "Untitled.md",
+    "01_MATERIE/Elementi di Analisi 1/Lecture 2026-03-02.md",
+    "01_MATERIE/Test/Lezione 2026-03-02 - test.md",
+    "01_MATERIE/Test",
+    "_templates/Assegna Materia o Argomento.md",
+    "01_MATERIE/Anno 1/Lecture 2026-03-02.md",
+    "01_MATERIE/Anno 1",
     "01_MATERIE/MOC_Analisi_1.md",
-    "_templates/Subject Hub.md",
-    "_templates/Concept Note Template.md",
-    "_templates/General Note.md",
-    "_templates/Assign Tema to Current Note.md",
     "_templates",
     "_templater_scripts/universityConfig.js",
     "_templater_scripts/universityNoteUtils.js",
@@ -222,26 +245,6 @@
     "_templater_scripts",
     "00_SISTEMA/Templates/obsidian-university-workflow-main/tests/universityNoteUtils.test.js",
     "00_SISTEMA/Templates/obsidian-university-workflow-main/tests",
-    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templates/Subject Hub.md",
-    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templates/Lecture Note.md",
-    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templates/General Note.md",
-    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templates/Concept Note Template.md",
-    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templates/Assign Tema to Current Note.md",
-    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templates",
-    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templater_scripts/universityNoteUtils.js",
-    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templater_scripts/getUniversityContext.js",
-    "00_SISTEMA/Templates/obsidian-university-workflow-main/README.md",
-    "00_SISTEMA/Templates/obsidian-university-workflow-main/AGENTS.md",
-    "00_SISTEMA/Template_MOC.md.md",
-    "00_SISTEMA/Template_Nuovo_Concetto.md",
-    "Test Template.md",
-    "02_RISORSE/LaTeX Cheat Sheet.md",
-    "01_MATERIE/Elementi di Analisi 1/TEST TEMPLATE2.md",
-    "01_MATERIE/Elementi di Analisi 1/Teorema di Weierstrass.md",
-    "01_MATERIE/MOC_{{folder}}.md",
-    "01_MATERIE/Elementi di Analisi 1/TEST.md",
-    "01_MATERIE/Elementi di Analisi 1/Test Template.md",
-    "01_MATERIE/Elementi di Analisi 1/MOC_{{folder}}.md",
-    "01_MATERIE/MOC_Fondamenti_Informatica.md"
+    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templates"
   ]
 }

@@ -1,26 +1,19 @@
-/*
-  universityConfig.js
-
-  Central configuration for university note scripts and templates. Adjust the
-  values here to rename folders, labels, and canonical study metadata.
-*/
-
 const universityConfig = {
   fs: {
     universityRoot: "01_MATERIE",
-    parcialContainer: "Parciales",
-    temaContainer: "Temas",
+    parcialContainer: "", 
+    temaContainer: "",    
   },
   labels: {
-    subject: "Subject",
-    year: "Year",
-    parcial: "Parcial",
-    final: "Final",
-    tema: "Tema",
+    subject: "Materia",
+    year: "Anno",
+    parcial: "General",
+    final: "Esame",
+    tema: "Argomento",
     general: "General",
   },
-  years: ["Anno 1", "Anno 2"],
-  parciales: ["General", "Parcial 1", "Parcial 2", "Parcial 3", "Final"],
+  years: [], // Vuoto: non vogliamo divisione per anni
+  parciales: ["General"],
   schema: {
     types: {
       lecture: "lecture",

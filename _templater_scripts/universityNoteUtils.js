@@ -443,9 +443,10 @@ function universityNoteUtils() {
       return canonicalYearsMap.get(lowered) ?? null;
     }
 
+    // Trova questa sezione nel tuo universityNoteUtils.js e sostituiscila:
     const patterns = [
-      /(?:year|yr|ano|y)[\s_-]*(\d{1,2})/i,
-      /(\d{1,2})(?:st|nd|rd|th)?[\s_-]*(?:year|yr|ano)/i,
+      /(?:year|yr|anno|y|an)[\s_-]*(\d{1,2})/i, // Aggiunto 'anno' e 'an'
+      /(\d{1,2})(?:st|nd|rd|th)?[\s_-]*(?:year|yr|anno|anno)/i,
     ];
 
     for (const pattern of patterns) {
@@ -516,274 +517,75 @@ function universityNoteUtils() {
 
     return sortCaseInsensitive(dedupePreserveOrder(yearValues));
   }
-
-  async function resolveSubjectAndParcial(
+    async function resolveSubjectAndParcial(
     tp,
     {
       currentFile,
       contextSubject = GENERAL_LABEL,
-      contextParcial = GENERAL_LABEL,
-      contextYear = null,
-      parcialOptions: parcialOptionsInput,
-      yearOptions: yearOptionsInput,
       allowNewSubject = true,
-      includeParcial = false,
-      includeYear = true,
-      promptYearWhen = "missing",
     } = {}
   ) {
-    if (!tp) {
-      throw new Error("Templater API (tp) is required to resolve placement.");
-    }
-
-    const baseUniversityPath = getBaseUniversityPath(currentFile);
-    const normalizedContextSubject = contextSubject ?? GENERAL_LABEL;
-    let yearOptions = [];
-    let year = includeYear ? normalizeYear(contextYear) : null;
-    let yearRootPath = baseUniversityPath;
-
-    if (includeYear) {
-      const discoveredYearFolders = listYearFolders(baseUniversityPath);
-      const configuredYearOptions = dedupePreserveOrder(
-        (Array.isArray(yearOptionsInput) ? yearOptionsInput : years)
-          .map((option) => normalizeYear(option))
-          .filter(Boolean)
-      );
-
-      yearOptions = reorderWithPreference(
-        dedupePreserveOrder([
-          ...(year ? [year] : []),
-          ...discoveredYearFolders,
-          ...configuredYearOptions,
-        ]),
-        year || discoveredYearFolders[0]
-      );
-
-      if (!year && discoveredYearFolders.length === 1) {
-        year = discoveredYearFolders[0];
-      }
-
-      const shouldPromptForYear =
-        promptYearWhen === "always" ||
-        (promptYearWhen !== "never" &&
-          !year &&
-          ((discoveredYearFolders.length > 1) ||
-            (promptYearWhen === "missing" &&
-              discoveredYearFolders.length === 0 &&
-              yearOptions.length > 0)));
-
-      if (shouldPromptForYear) {
-        const SKIP_YEAR_SENTINEL = "__skip_year__";
-        const yearLabelLower =
-          typeof YEAR_LABEL === "string" ? YEAR_LABEL.toLowerCase() : "year";
-        const allowSkipYear = promptYearWhen !== "always";
-        const displayOptions = allowSkipYear
-          ? [...yearOptions, `🚫 Skip ${yearLabelLower}`]
-          : [...yearOptions];
-        const valueOptions = allowSkipYear ? [...yearOptions, SKIP_YEAR_SENTINEL] : [...yearOptions];
-
-        const selectedYear = await tp.system.suggester(
-          displayOptions,
-          valueOptions,
-          false,
-          `Select ${YEAR_LABEL}`
-        );
-
-        year =
-          selectedYear === SKIP_YEAR_SENTINEL
-            ? null
-            : normalizeYear(selectedYear);
-      }
-
-      const yearFolderName = year ? sanitizeFolderName(year) : null;
-      yearRootPath = yearFolderName ? pathJoin(baseUniversityPath, yearFolderName) : baseUniversityPath;
-    }
-
-    const subjectOptions = buildSubjectOptions(yearRootPath, normalizedContextSubject);
+    const baseUniversityPath = DEFAULT_BASE_PATH; // Punta sempre a 01_MATERIE
+    
+    const subjectOptions = buildSubjectOptions(baseUniversityPath, contextSubject);
     const NEW_SUBJECT_SENTINEL = "__new_subject__";
-    const subjectLabelLower =
-      typeof SUBJECT_LABEL === "string" ? SUBJECT_LABEL.toLowerCase() : "subject";
 
-    let subjectSelection = normalizedContextSubject;
-
-    if (allowNewSubject || subjectOptions.length > 0) {
-      const displayOptions = allowNewSubject
-        ? [...subjectOptions, `➕ Create new ${subjectLabelLower}`]
-        : subjectOptions;
-      const valueOptions = allowNewSubject
-        ? [...subjectOptions, NEW_SUBJECT_SENTINEL]
-        : subjectOptions;
-
-      subjectSelection =
-        (await tp.system.suggester(displayOptions, valueOptions)) ?? normalizedContextSubject;
-    }
-
-    let subject = subjectSelection;
-
-    if (subjectSelection === NEW_SUBJECT_SENTINEL) {
-      const newSubjectInput = await tp.system.prompt(`Name for the new ${SUBJECT_LABEL}`);
-      subject = newSubjectInput?.trim() || normalizedContextSubject;
-    }
-
-    const subjectFolderName =
-      subject && subject !== GENERAL_LABEL ? sanitizeFolderName(subject) : null;
-    const subjectRootPath = subjectFolderName
-      ? pathJoin(yearRootPath, subjectFolderName)
-      : yearRootPath;
-
-    let parcialOptions = [];
-    let parcial = includeParcial ? normalizeParcial(contextParcial) : null;
-    let parcialFolderName = null;
-    let targetFolder = subjectRootPath;
-
-    if (includeParcial) {
-      const parcialOptionsBase = parcialOptionsInput ?? parciales;
-
-      parcialOptions = reorderWithPreference(parcialOptionsBase, normalizeParcial(contextParcial));
-      parcial = normalizeParcial(
-        (await tp.system.suggester(parcialOptions, parcialOptions)) ?? contextParcial
-      );
-
-      parcialFolderName =
-        parcial && parcial !== GENERAL_LABEL ? sanitizeFolderName(parcial) : null;
-
-      const { containerPath: parcialContainerPath } = getParcialContext(
-        yearRootPath,
-        subjectFolderName ?? undefined
-      );
-
-      targetFolder = parcialContainerPath || yearRootPath;
-
-      if (subjectFolderName && !(targetFolder?.includes(subjectFolderName))) {
-        targetFolder = pathJoin(yearRootPath, subjectFolderName);
-      }
-
-      if (parcialFolderName) {
-        targetFolder = pathJoin(targetFolder, parcialFolderName);
-      }
-
-      if (!targetFolder) {
-        targetFolder = yearRootPath;
-      }
-    }
-
-    return {
-      baseUniversityPath,
-      yearRootPath,
-      subject,
-      subjectFolderName,
-      subjectRootPath,
-      year,
-      yearOptions,
-      parcial,
-      parcialFolderName,
-      parcialOptions,
-      targetFolder,
-    };
-  }
-
-  async function resolveSubjectParcialTema(
-    tp,
-    {
-      includeParcial = false,
-      includeTema = true,
-      contextTema = GENERAL_LABEL,
-      allowNewTema = true,
-      ...rest
-    } = {}
-  ) {
-    const placement = await resolveSubjectAndParcial(tp, {
-      ...rest,
-      includeParcial,
-    });
-
-    if (!includeTema) {
-      return placement;
-    }
-
-    const {
-      baseUniversityPath,
-      yearRootPath,
-      subjectFolderName,
-      parcialFolderName,
-      targetFolder: baseTargetFolder,
-      subjectRootPath,
-    } = placement ?? {};
-
-    const temaContext = getTemaContext(
-      yearRootPath ?? baseUniversityPath,
-      subjectFolderName ?? undefined,
-      includeParcial ? parcialFolderName ?? undefined : undefined,
-      { includeParcial }
+    let subjectSelection = await tp.system.suggester(
+      (item) => item === NEW_SUBJECT_SENTINEL ? "➕ Crea nuova Materia" : item,
+      [...subjectOptions, NEW_SUBJECT_SENTINEL],
+      false,
+      "Seleziona Materia"
     );
 
-    const temaContainerPath =
-      temaContext?.containerPath ||
-      baseTargetFolder ||
-      subjectRootPath ||
-      yearRootPath ||
-      baseUniversityPath;
+    let subject = subjectSelection === NEW_SUBJECT_SENTINEL 
+      ? (await tp.system.prompt("Nome nuova materia")) 
+      : subjectSelection;
 
-    const existingTemas = temaContext?.existingTemas ?? [];
-    const NEW_TEMA_SENTINEL = "__new_tema__";
-    const SKIP_TEMA_SENTINEL = "__skip_tema__";
-
-    const baseTemaOptions = dedupePreserveOrder([
-      GENERAL_LABEL,
-      contextTema && contextTema !== GENERAL_LABEL ? contextTema : null,
-      ...existingTemas,
-    ]).filter(Boolean);
-
-    const temaLabelLower =
-      typeof TEMA_LABEL === "string" ? TEMA_LABEL.toLowerCase() : "tema";
-
-    let temaSelection = contextTema ?? GENERAL_LABEL;
-
-    if (allowNewTema || baseTemaOptions.length > 0) {
-      const displayOptions = [...baseTemaOptions];
-      const valueOptions = [...baseTemaOptions];
-
-      if (allowNewTema) {
-        displayOptions.push(`➕ Create new ${temaLabelLower}`);
-        valueOptions.push(NEW_TEMA_SENTINEL);
-      }
-
-      displayOptions.push(`🚫 Skip ${temaLabelLower}`);
-      valueOptions.push(SKIP_TEMA_SENTINEL);
-
-      temaSelection =
-        (await tp.system.suggester(displayOptions, valueOptions, false, `Select ${TEMA_LABEL}`)) ??
-        contextTema ??
-        GENERAL_LABEL;
-    }
-
-    let tema = temaSelection;
-
-    if (temaSelection === NEW_TEMA_SENTINEL) {
-      const newTemaInput = await tp.system.prompt(`Name for the new ${TEMA_LABEL}`);
-      tema = newTemaInput?.trim() || contextTema || GENERAL_LABEL;
-    } else if (temaSelection === SKIP_TEMA_SENTINEL) {
-      tema = GENERAL_LABEL;
-    }
-
-    if (!tema) {
-      tema = GENERAL_LABEL;
-    }
-
-    const temaFolderName = tema && tema !== GENERAL_LABEL ? sanitizeFolderName(tema) : null;
-    const targetFolder = temaFolderName
-      ? pathJoin(temaContainerPath, temaFolderName)
-      : temaContainerPath;
+    subject = subject || contextSubject;
+    const targetFolder = pathJoin(baseUniversityPath, sanitizeFolderName(subject));
 
     return {
-      ...placement,
-      tema,
-      temaFolderName,
-      temaContainerPath,
-      temaOptions: existingTemas,
+      baseUniversityPath,
+      subject,
       targetFolder,
+      year: null,
+      parcial: GENERAL_LABEL
     };
   }
+
+async function resolveSubjectParcialTema(tp, { currentFile, contextSubject }) {
+  const universityRoot = "01_MATERIE"; // Forziamo la tua root
+  
+  // 1. Recupera le materie esistenti nella cartella 01_MATERIE
+  const folder = app.vault.getAbstractFileByPath(universityRoot);
+  const subjectOptions = folder && folder.children 
+    ? folder.children.filter(f => f instanceof tp.obsidian.TFolder).map(f => f.name)
+    : [];
+
+  const NEW_SUB = "__new__";
+  const displayOptions = [...subjectOptions, "➕ Crea Nuova Materia"];
+  const valueOptions = [...subjectOptions, NEW_SUB];
+
+  // 2. Chiedi all'utente quale materia usare
+  const selection = await tp.system.suggester(displayOptions, valueOptions, false, "Seleziona Materia");
+  if (!selection) return null;
+
+  let subject = selection;
+  if (selection === NEW_SUB) {
+    subject = await tp.system.prompt("Nome della nuova materia");
+  }
+
+  if (!subject) return null;
+
+  // 3. Costruisci il percorso finale: 01_MATERIE/NomeMateria
+  const targetFolder = `${universityRoot}/${subject}`;
+
+  return {
+    targetFolder,
+    subject,
+    tema: "General"
+  };
+}
 
   const constants = {
     general: GENERAL_LABEL,
