@@ -3,8 +3,10 @@ materia: "[[MOC_Fondamenti di Informatica]]"
 argomento: Alfabeti, Stringhe, Linguaggi
 tipo: lezione
 data: 2026-03-02
-stato: Da studuare
+stato: finito
 aliases:
+tags:
+  - "#ripasso"
 ---
 
 # Alfabeto, Stringa, Linguaggio
@@ -21,7 +23,7 @@ aliases:
 ---
 # Testo
 
-### ==Alfabeto==
+### ==[[Alfabeto]]==
 
 >[!NOTE] Definizione
 > Un insieme finito non vuoto $\Sigma$ (sigma) di simboli(o caratteri) prende il nome di 
@@ -42,7 +44,7 @@ aliases:
 Quando iniziamo a combinare i simboli di un alfabeto, creiamo delle stringhe (o parole).
 L'insieme di tutte le possibili stringhe costruibili su un alfabeto $\Sigma$ si indica con $\Sigma^{*}$ ed è chiamato **Monoide Libero** o **Monoide Sintattico**
 
->[!NOTE] Concetti Chiave delle stringhe:
+>[!NOTE] Concetti Chiave delle stringhe ([[Stringa]]):
 > - Stringa Vuota ($\epsilon$):  E' una stringa che non contiene caratteri. La sua 
 > lunghezza è zero  ( $|\epsilon| = 0$ ).
 > - Appartenenza: se un carattere $a \in \Sigma$ allora fa parte anche dell'insieme di stringhe $\Sigma^{*}$. Tuttavia, non tutte le stringhe in $\Sigma^{*}$ sono singoli caratteri, quindi 

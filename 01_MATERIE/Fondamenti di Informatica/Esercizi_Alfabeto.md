@@ -1,4 +1,4 @@
-
+## [[Lezione 2026-03-02 - Alfabeto, Stringa, Linguaggio]]
 
 >[!NOTE] Es1
 >Dato l'alfabeto $\Sigma = \{0,1,2\}$
@@ -36,3 +36,5 @@ Quindi:
 2. $L_1\cap L_2$ = {$a$}
 3. $L_1\circ L_2$ = {$a,ab,aa,aab,ba,bab$}
 4.  $L_2\circ L_1$ = {$a,aa,ab,aba,abb$}
+
+>[!TIP] Osservazione Nota come $L_1 \circ L_2 \neq L_2 \circ L_1$, confermando che l'ordine conta nella concatenazione di linguaggi.

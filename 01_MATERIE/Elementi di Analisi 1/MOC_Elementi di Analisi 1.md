@@ -11,7 +11,6 @@ aggiornato: 2026-03-02
 - [ ] Sopravvivere.
 
 ---
-
 ## 📘 Lezioni
 ```dataview
 TABLE data AS "Data", argomento AS "Argomento"
@@ -24,10 +23,10 @@ SORT data DESC
 
 ## 💡 Concetti e Definizioni
 ```dataview
-TABLE argomento AS "Categoria", stato AS "Stato"
+TABLE argomento AS "Argomento", stato AS "Stato"
 FROM ""
-WHERE file.folder = this.file.folder
-AND type = "concept"
+WHERE file.folder = this.file.folder + "/Concetti"
+AND tipo = "concetto"
 AND file.name != this.file.name
 SORT argomento ASC
 ```
