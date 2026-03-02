@@ -8,8 +8,7 @@ aggiornato: 2026-03-02
 # 🧭 MOC_Elementi di Analisi 1
 
 ## ✅ Panoramica
-- [ ] Obiettivi dell'esame
-- [ ] Data appello:
+- [ ] Sopravvivere.
 
 ---
 
