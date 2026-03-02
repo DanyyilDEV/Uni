@@ -1,3 +1,5 @@
 {
-  "accentColor": "#ff8800"
+  "accentColor": "#ff8800",
+  "theme": "moonstone",
+  "cssTheme": "AnuPpuccin"
 }

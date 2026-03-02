@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "ba257811edf6add3",
+        "id": "0cd66a6cb52f1a2b",
         "type": "tabs",
         "children": [
           {
-            "id": "4228a2aba5323718",
+            "id": "6a8e820f4caccbe6",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_MATERIE/Elementi di Analisi 1/Test Template.md",
+                "file": "00_SISTEMA/Template_MOC.md.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Test Template"
+              "title": "Template_MOC.md"
             }
           }
         ]
@@ -137,6 +137,16 @@
             }
           },
           {
+            "id": "7129ca1d8f8f7da7",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          },
+          {
             "id": "1ee2929e5283f936",
             "type": "leaf",
             "state": {
@@ -156,22 +166,20 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "01_MATERIE/Elementi di Analisi 1/Test Template.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Test Template"
+              "title": "Outline"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 552.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -185,12 +193,19 @@
       "bases:Create new base": false
     }
   },
-  "active": "4228a2aba5323718",
+  "active": "7129ca1d8f8f7da7",
   "lastOpenFiles": [
-    "01_MATERIE/MOC_Analisi_1.md",
     "00_SISTEMA/Template_Nuovo_Concetto.md",
-    "01_MATERIE/Elementi di Analisi 1/Test Template.md",
+    "00_SISTEMA/Template_MOC.md.md",
+    "01_MATERIE/MOC_Analisi_1.md",
+    "Test Template.md",
+    "02_RISORSE/LaTeX Cheat Sheet.md",
+    "01_MATERIE/Elementi di Analisi 1/TEST TEMPLATE2.md",
     "01_MATERIE/Elementi di Analisi 1/Teorema di Weierstrass.md",
+    "01_MATERIE/MOC_{{folder}}.md",
+    "01_MATERIE/Elementi di Analisi 1/TEST.md",
+    "01_MATERIE/Elementi di Analisi 1/Test Template.md",
+    "01_MATERIE/Elementi di Analisi 1/MOC_{{folder}}.md",
     "01_MATERIE/MOC_Fondamenti_Informatica.md",
     "Welcome.md",
     "test.md",
