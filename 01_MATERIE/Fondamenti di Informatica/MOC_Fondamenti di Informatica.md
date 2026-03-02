@@ -8,8 +8,7 @@ aggiornato: 2026-03-02
 # 🧭 MOC_Fondamenti di Informatica
 
 ## ✅ Panoramica
-- [ ] Obiettivi dell'esame
-- [ ] Data appello:
+- 
 
 ---
 
