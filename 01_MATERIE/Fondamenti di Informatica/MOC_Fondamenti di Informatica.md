@@ -14,6 +14,11 @@ aggiornato: 2026-03-02
 	- Saranno valide solo se sostenute per l'80%
 	- 12 minuti - 10 Domande
 	- Voto dato globalmente e comunicato il giorno prima della prima prova scritta solo alle persone che si prenotano, se non ti prenoti te la metti nel culo perche il voto viene annullato.
+- Orari di ricevimento: 
+	- Lunedi - Mercoledi -> 11:00 - 13:00
+	- Studio 236bis(Piano1).
+- Materiale:
+	- [Sito](https://www.dmi.unict.it/barba/FONDAMENTI/)
 	- 
 
 ---
