@@ -2,7 +2,7 @@ const universityConfig = {
   fs: {
     universityRoot: "01_MATERIE",
     parcialContainer: "", 
-    temaContainer: "",    
+    temaContainer: "Argomenti",   
   },
   labels: {
     subject: "Materia",
