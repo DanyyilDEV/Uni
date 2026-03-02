@@ -6,16 +6,17 @@
 > - **Testo nelle formule:** `\text{testo}` (es. $x=2 \implies \text{vero}$)
 
 ## 1. Operatori e Struttura Base
-| Concetto | Comando LaTeX | Risultato |
-| :--- | :--- | :--- |
-| **Frazione** | `\frac{a}{b}` | $\frac{a}{b}$ |
-| **Esponente** | `x^{2}` | $x^{2}$ |
-| **Pedice** | `x_{n}` | $x_{n}$ |
-| **Radice Quadrata** | `\sqrt{x}` | $\sqrt{x}$ |
-| **Radice n-esima** | `\sqrt[n]{x}` | $\sqrt[n]{x}$ |
-| **Vettore** | `\vec{v}` | $\vec{v}$ |
-| **Puntini di sospensione** | `1, 2, \dots, n` | $1, 2, \dots, n$ |
-| **Parentesi Adattive** | `\left( \frac{a}{b} \right)` | $\left( \frac{a}{b} \right)$ |
+| Concetto                   | Comando LaTeX                | Risultato                    |
+| :------------------------- | :--------------------------- | :--------------------------- |
+| **Frazione**               | `\frac{a}{b}`                | $\frac{a}{b}$                |
+| **Esponente**              | `x^{2}`                      | $x^{2}$                      |
+| **Pedice**                 | `x_{n}`                      | $x_{n}$                      |
+| **Radice Quadrata**        | `\sqrt{x}`                   | $\sqrt{x}$                   |
+| **Radice n-esima**         | `\sqrt[n]{x}`                | $\sqrt[n]{x}$                |
+| **Vettore**                | `\vec{v}`                    | $\vec{v}$                    |
+| **Puntini di sospensione** | `1, 2, \dots, n`             | $1, 2, \dots, n$             |
+| **Parentesi Adattive**     | `\left( \frac{a}{b} \right)` | $\left( \frac{a}{b} \right)$ |
+|                            |                              |                              |
 
 ## 2. Analisi Matematica (Analisi 1)
 | Concetto              | Comando LaTeX                   | Risultato                       |
@@ -28,17 +29,18 @@
 | **Infinito**          | `\infty`                        | $\infty$                        |
 
 ## 3. Logica e Insiemistica (Informatica)
-| Concetto | Comando LaTeX | Risultato |
-| :--- | :--- | :--- |
-| **Per ogni / Esiste** | `\forall, \exists` | $\forall, \exists$ |
-| **Appartiene / Non app.** | `\in, \notin` | $\in, \notin$ |
-| **Insiemi Reali/Nat.** | `\mathbb{R}, \mathbb{N}, \mathbb{Z}` | $\mathbb{R}, \mathbb{N}, \mathbb{Z}$ |
-| **Inclusione** | `\subset, \subseteq` | $\subset, \subseteq$ |
-| **Unione / Intersez.** | `\cup, \cap` | $\cup, \cap$ |
-| **Implicazione / Equiv.** | `\implies, \iff` | $\implies, \iff$ |
-| **Negazione (NOT)** | `\neg P` | $\neg P$ |
-| **AND / OR (Logico)** | `\land, \lor` | $\land, \lor$ |
-| **XOR** | `\oplus` | $\oplus$ |
+| Concetto                  | Comando LaTeX                        | Risultato                            |
+| :------------------------ | :----------------------------------- | :----------------------------------- |
+| **Per ogni / Esiste**     | `\forall, \exists`                   | $\forall, \exists$                   |
+| **Appartiene / Non app.** | `\in, \notin`                        | $\in, \notin$                        |
+| **Insiemi Reali/Nat.**    | `\mathbb{R}, \mathbb{N}, \mathbb{Z}` | $\mathbb{R}, \mathbb{N}, \mathbb{Z}$ |
+| **Inclusione**            | `\subset, \subseteq`                 | $\subset, \subseteq$                 |
+| **Unione / Intersez.**    | `\cup, \cap`                         | $\cup, \cap$                         |
+| **Implicazione / Equiv.** | `\implies, \iff`                     | $\implies, \iff$                     |
+| **Negazione (NOT)**       | `\neg P`                             | $\neg P$                             |
+| **AND / OR (Logico)**     | `\land, \lor`                        | $\land, \lor$                        |
+| **XOR**                   | `\oplus`                             | $\oplus$                             |
+| **Concatenazione**        | `\circ`                              | $\circ$                              |
 
 ## 4. Relazioni e Simboli Greci
 | Concetto | Comando LaTeX | Risultato |
