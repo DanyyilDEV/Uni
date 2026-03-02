@@ -1,4 +1,7 @@
 [
   "obsidian-git",
-  "homepage"
+  "homepage",
+  "smart-connections",
+  "templater-obsidian",
+  "dataview"
 ]

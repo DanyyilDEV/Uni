@@ -1,24 +1,20 @@
 {
   "main": {
-    "id": "7b0e8c4880479bdd",
+    "id": "5324373015726ba8",
     "type": "split",
     "children": [
       {
-        "id": "0cd66a6cb52f1a2b",
+        "id": "4509724f8bf84da7",
         "type": "tabs",
         "children": [
           {
-            "id": "6a8e820f4caccbe6",
+            "id": "e7a7b303c61786dc",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "00_SISTEMA/Template_MOC.md.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Template_MOC.md"
+              "title": "New tab"
             }
           }
         ]
@@ -166,12 +162,23 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "01_MATERIE/Elementi di Analisi 1/Test1.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Test1"
+            }
+          },
+          {
+            "id": "45b7b64b430df731",
+            "type": "leaf",
+            "state": {
+              "type": "smart-connections-view",
+              "state": {},
+              "icon": "smart-connections",
+              "title": "Connections"
             }
           }
         ],
@@ -190,14 +197,43 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "homepage:Open homepage": false,
+      "smart-connections:Smart Connections: Open connections view": false,
+      "smart-connections:Smart Lookup: Open lookup view": false,
+      "smart-connections:Smart Connections: Open random connection": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "7129ca1d8f8f7da7",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "00_SISTEMA/Template_Nuovo_Concetto.md",
-    "00_SISTEMA/Template_MOC.md.md",
+    "01_MATERIE/Elementi di Analisi 1/Test1.md",
+    "_templates/Lecture Note.md",
+    "Untitled.md",
     "01_MATERIE/MOC_Analisi_1.md",
+    "_templates/Subject Hub.md",
+    "_templates/Concept Note Template.md",
+    "_templates/General Note.md",
+    "_templates/Assign Tema to Current Note.md",
+    "_templates",
+    "_templater_scripts/universityConfig.js",
+    "_templater_scripts/universityNoteUtils.js",
+    "_templater_scripts/getUniversityContext.js",
+    "_templater_scripts",
+    "00_SISTEMA/Templates/obsidian-university-workflow-main/tests/universityNoteUtils.test.js",
+    "00_SISTEMA/Templates/obsidian-university-workflow-main/tests",
+    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templates/Subject Hub.md",
+    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templates/Lecture Note.md",
+    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templates/General Note.md",
+    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templates/Concept Note Template.md",
+    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templates/Assign Tema to Current Note.md",
+    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templates",
+    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templater_scripts/universityNoteUtils.js",
+    "00_SISTEMA/Templates/obsidian-university-workflow-main/_templater_scripts/getUniversityContext.js",
+    "00_SISTEMA/Templates/obsidian-university-workflow-main/README.md",
+    "00_SISTEMA/Templates/obsidian-university-workflow-main/AGENTS.md",
+    "00_SISTEMA/Template_MOC.md.md",
+    "00_SISTEMA/Template_Nuovo_Concetto.md",
     "Test Template.md",
     "02_RISORSE/LaTeX Cheat Sheet.md",
     "01_MATERIE/Elementi di Analisi 1/TEST TEMPLATE2.md",
@@ -206,16 +242,6 @@
     "01_MATERIE/Elementi di Analisi 1/TEST.md",
     "01_MATERIE/Elementi di Analisi 1/Test Template.md",
     "01_MATERIE/Elementi di Analisi 1/MOC_{{folder}}.md",
-    "01_MATERIE/MOC_Fondamenti_Informatica.md",
-    "Welcome.md",
-    "test.md",
-    "01_MATERIE/MOC_Programmazione_2.md",
-    "01_MATERIE/Programmazione 2",
-    "01_MATERIE/Elementi di Analisi 1",
-    "01_MATERIE/Fondamenti di Informatica",
-    "03_ARCHIVIO",
-    "02_RISORSE",
-    "01_MATERIE",
-    "00_SISTEMA"
+    "01_MATERIE/MOC_Fondamenti_Informatica.md"
   ]
 }
