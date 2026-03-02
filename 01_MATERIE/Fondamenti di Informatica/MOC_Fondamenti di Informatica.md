@@ -8,7 +8,13 @@ aggiornato: 2026-03-02
 # 🧭 MOC_Fondamenti di Informatica
 
 ## ✅ Panoramica
-- 
+- Georgia Fargetta
+- Tams: il8umlf
+- Prove in Itinere al termine di quasi tutte le lezioni
+	- Saranno valide solo se sostenute per l'80%
+	- 12 minuti - 10 Domande
+	- Voto dato globalmente e comunicato il giorno prima della prima prova scritta solo alle persone che si prenotano, se non ti prenoti te la metti nel culo perche il voto viene annullato.
+	- 
 
 ---
 
