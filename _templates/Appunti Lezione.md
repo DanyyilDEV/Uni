@@ -70,7 +70,7 @@ if (lang && lang !== "none") {
 }
 
 content += `## Punti Chiave\n- \n\n`;
-content += `## Approfondimenti e Dubbi\n- \n\n`;
+content += `## Testo\n- \n\n`;
 content += `--- \n`;
 content += `Materia: [[MOC_${resolvedSubject}]]\n\n`;
 

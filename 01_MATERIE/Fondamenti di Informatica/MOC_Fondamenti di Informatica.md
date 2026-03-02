@@ -7,9 +7,11 @@ aggiornato: 2026-03-02
 
 # 🧭 MOC_Fondamenti di Informatica
 
+
 ## ✅ Panoramica
-- Georgia Fargetta
-- Tams: il8umlf
+
+- **Georgia Fargetta**
+- Tams: **il8umlf**
 - Prove in Itinere al termine di quasi tutte le lezioni
 	- Saranno valide solo se sostenute per l'80%
 	- 12 minuti - 10 Domande
@@ -19,8 +21,14 @@ aggiornato: 2026-03-02
 	- Studio 236bis(Piano1).
 - Materiale:
 	- [Sito](https://www.dmi.unict.it/barba/FONDAMENTI/)
-	- 
 
+
+- [ ] 16 Marzo 2026 Esercitazione
+- [ ] 23 Marzo 2026 Esercitazione
+- [ ] 13 Aprile 2026 Esercitazione
+- [ ] 27 Aprile 2026 Esercitazione
+- [ ] 4 Maggio 2026 Esercitazione
+- [ ] 11 Maggio 2026 Esercitazione
 ---
 
 ## 📘 Lezioni
