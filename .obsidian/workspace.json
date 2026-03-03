@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_MATERIE/Fondamenti di Informatica/Esercizi_Alfabeto.md",
+                "file": "Orario.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Esercizi_Alfabeto"
+              "title": "Orario"
             }
           },
           {
@@ -55,16 +55,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_MATERIE/Inglese/Lezione 2026-03-03 - Phonetic Alphabets.md",
+                "file": "01_MATERIE/Fondamenti di Informatica/Lezione 2026-03-02 - Alfabeto, Stringa, Linguaggio.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lezione 2026-03-03 - Phonetic Alphabets"
+              "title": "Lezione 2026-03-02 - Alfabeto, Stringa, Linguaggio"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -264,16 +263,16 @@
       "custom-sort:Toggle custom sorting": false
     }
   },
-  "active": "dbbf8b1cb5c1c2ac",
+  "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "01_MATERIE/Inglese/Untitled.md",
+    "01_MATERIE/Fondamenti di Informatica/Esercizi_Alfabeto.md",
+    "01_MATERIE/Fondamenti di Informatica/Lezione 2026-03-02 - Alfabeto, Stringa, Linguaggio.md",
     "01_MATERIE/Inglese/Lezione 2026-03-03 - Phonetic Alphabets.md",
+    "01_MATERIE/Inglese/Untitled.md",
     "01_MATERIE/Inglese/MOC_Inglese.md",
     "01_MATERIE/Fondamenti di Informatica/MOC_Fondamenti di Informatica 1.md",
-    "01_MATERIE/Fondamenti di Informatica/Lezione 2026-03-02 - Alfabeto, Stringa, Linguaggio.md",
     "01_MATERIE/Fondamenti di Informatica/Untitled.md",
     "Orario.md",
-    "01_MATERIE/Fondamenti di Informatica/Esercizi_Alfabeto.md",
     "01_MATERIE/Inglese",
     "Home.md",
     "00_SISTEMA/Pasted image 20260302234354.png",
