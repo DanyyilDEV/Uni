@@ -1,5 +1,5 @@
 ---
-materia: "[[MOC_Fondamenti di Informatica]]"
+materia: "[[MOC_Inglese]]"
 argomento: Alfabeti, Stringhe, Linguaggi
 tipo: lezione
 data: 2026-03-02
@@ -77,6 +77,6 @@ Esercizi: [[Esercizi_Alfabeto]]
 
 
 
-Materia: [[MOC_Fondamenti di Informatica]]
+Materia: [[MOC_Inglese]]
 
 <% tp.file.cursor() %>
