@@ -10,7 +10,10 @@ aggiornato: 2026-03-02
 
 ## ✅ Panoramica
 
-- 
+
+- Alessi (o Justin) 
+
+- Prova in itinere un group project di 4-5 persone per creare un qualcosa nel nostro ambito, requisito 80% delle ore di frequenza.
 
 ---
 
