@@ -13,32 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01_MATERIE/Fondamenti di Informatica/Lezione 2026-03-05 - Linguaggi Formali e Automi a stato finito.md",
+                "file": "Home.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Lezione 2026-03-05 - Linguaggi Formali e Automi a stato finito"
-            }
-          }
-        ]
-      },
-      {
-        "id": "98312995a6d6ac40",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "9c2ff462e0fb3fad",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02_RISORSE/LaTeX Cheat Sheet.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "LaTeX Cheat Sheet"
+              "title": "Home"
             }
           }
         ]
