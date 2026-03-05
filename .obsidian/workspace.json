@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
+                "file": "01_MATERIE/Fondamenti di Informatica/Lezione 2026-03-05 - Linguaggi Formali e Automi a stato finito.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Lezione 2026-03-05 - Linguaggi Formali e Automi a stato finito"
             }
           }
         ]
@@ -223,15 +223,17 @@
   },
   "active": "e7a7b303c61786dc",
   "lastOpenFiles": [
-    "01_MATERIE/Fondamenti di Informatica/Lezione 2026-03-02 - Alfabeto, Stringa, Linguaggio.md",
     "Orario.md",
-    "01_MATERIE/Fondamenti di Informatica/Esercizi_Alfabeto.md",
+    "01_MATERIE/Fondamenti di Informatica/File_Condivisi/2Linguaggi-Formali-e-Automi-a-Stati-Finiti.pdf",
+    "01_MATERIE/Fondamenti di Informatica/Lezione 2026-03-05 - Linguaggi Formali e Automi a stato finito.md",
+    "01_MATERIE/Fondamenti di Informatica/Untitled.md",
+    "01_MATERIE/Fondamenti di Informatica/Lezione 2026-03-02 - Alfabeto, Stringa, Linguaggio.md",
     "Home.md",
+    "01_MATERIE/Fondamenti di Informatica/Esercizi_Alfabeto.md",
     "01_MATERIE/Inglese/Lezione 2026-03-03 - Phonetic Alphabets.md",
     "01_MATERIE/Inglese/Untitled.md",
     "01_MATERIE/Inglese/MOC_Inglese.md",
     "01_MATERIE/Fondamenti di Informatica/MOC_Fondamenti di Informatica 1.md",
-    "01_MATERIE/Fondamenti di Informatica/Untitled.md",
     "01_MATERIE/Inglese",
     "00_SISTEMA/Pasted image 20260302234354.png",
     "01_MATERIE/Elementi di Analisi 1/MOC_Elementi di Analisi 1.md",
@@ -255,12 +257,9 @@
     "01_MATERIE/Elementi di Analisi 1/Untitled.md",
     "01_MATERIE/Elementi di Analisi 1/Lezione 2026-03-02 - Calcoli.md",
     "undefined",
-    "undefined/Lezione 2026-03-02.md",
-    "01_MATERIE/Elementi di Analisi 1/Acqua.md",
     "01_MATERIE/Test",
     "01_MATERIE/Anno 1",
     "_templates",
-    "_templater_scripts/universityConfig.js",
-    "_templater_scripts/universityNoteUtils.js"
+    "_templater_scripts/universityConfig.js"
   ]
 }
