@@ -32,7 +32,8 @@ aliases:
 >[!NOTE] L'insieme delle stringhe di lunghezza $h$ sull'alfabeto $\Sigma$ è indicato con $\Sigma^h$ 
 
 - ### Stella di Kleene
+$$L^* = \bigcup_{i=0}^{\infty} L^h$$
 --- 
 Materia: [[MOC_Fondamenti di Informatica 1]]
 
-<% tp.file.cursor() %>
+	<% tp.file.cursor() %>
